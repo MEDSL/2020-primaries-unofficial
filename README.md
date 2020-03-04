@@ -110,4 +110,4 @@ The variables are listed as they appear in the data file. Not all variables appe
 - **Description**: in precinct file, whether this election corresponds to elections for President ("president"), Senate ("senate"), US House ("house"), or state ("state") files, or none of these ("local")
 
 ## Notes
-
+Iowa data added. Stages include "FIRST ROUND", "SECOND ROUND" and "SDE AWARDED." 
