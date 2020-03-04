@@ -1,5 +1,6 @@
 # 2020-primaries-unofficial
-Repository for the 2020 unofficial primary results
+Repository for the 2020 unofficial primary results. The data are broken into county and precinct returns, each within their own folders. Additionally, the counties folder will report election maps by level of competition as measured by number of effective candidates. The results will be reported both by standard jurisdiction (counties; towns) and by Gastner-Newman cartograms for data visualization purposes. For QA purposes, please contact John A Curiel at jcuriel@mit.edu, and he will respond as soon as possible. 
+
 # Codebook for 2018 Election Offical Data
 
 The data files for unofficial county and precinct level elections returns for the 2020 primaries. The files are incomplete and will be updated until completion. Files that begin with "county" refer to county level results, and those with "precinct" precinct level results. 
@@ -61,6 +62,11 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 -----------------
 
+### caucus
+- **Description**: TRUE/FALSE indicator for whether nominating election a caucus
+
+-----------------
+
 ### candidate
 - **Description**: name of the candidate; write-in candidates/totals represented as NA's
  
@@ -96,7 +102,7 @@ The variables are listed as they appear in the data file. Not all variables appe
 ----------------
 
 ### source  
-- **Description**: the url to the source where the data were acquired. 
+- **Description**: the source where the data were acquired. 
 
 ----------------
 
