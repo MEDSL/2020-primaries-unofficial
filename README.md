@@ -62,6 +62,11 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 -----------------
 
+### caucus
+- **Description**: TRUE/FALSE indicator for whether nominating election a caucus
+
+-----------------
+
 ### candidate
 - **Description**: name of the candidate; write-in candidates/totals represented as NA's
  
@@ -97,7 +102,7 @@ The variables are listed as they appear in the data file. Not all variables appe
 ----------------
 
 ### source  
-- **Description**: the url to the source where the data were acquired. 
+- **Description**: the source where the data were acquired. 
 
 ----------------
 
