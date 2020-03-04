@@ -2,7 +2,7 @@
 Repository for the 2020 unofficial primary results
 # Codebook for 2018 Election Offical Data
 
-The data files `senate_overall_2018`, `district_overall_2018`, `state_overall_2018`, `county_2018`, and `precinct_2018` contain official returns for elections returns in 2018. The `precinct_2018` files are incomplete but will be updated weekly until completion. Files that begin with senate_ contain data for U.S. Senate elections, files that begin with district_ contain data for U.S. House elections, and files that begin with state_ contain data for state office elections. The county and precinct datasets contains all three. Files for overall results show constituency-level returns, and where available, these are broken down into county level returns in the county files. 
+The data files for unofficial county and precinct level elections returns for the 2020 primaries. The files are incomplete and will be updated until completion. Files that begin with "county" refer to county level results, and those with "precinct" precinct level results. 
 
 The source of the data is typically each state's Secretary of State website or comparable elections division page on an official state website. (The precinct-level returns for California are obtained from the statewide redistricting database, https://statewidedatabase.org/). For Minnesota, Missouri, New Jersey, Oregon, South Carolina, Texas, and Vermont, we used precinct-level returns from the OpenElections project (https://github.com/openelections).
 
@@ -93,6 +93,10 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 ### version  
 - **Description**: date when this dataset was finalized
+----------------
+
+### source  
+- **Description**: the url to the source where the data were acquired. 
 
 ----------------
 
