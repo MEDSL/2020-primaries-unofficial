@@ -111,3 +111,5 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 ## Notes
 Iowa data added. Stages include "FIRST ROUND", "SECOND ROUND" and "SDE AWARDED." 
+
+South Carolina has detailed data on type of vote, including "Absentee By Mail", "Election Day", "Failsafe", "Failsafe Provisional" "InPerson Absentee", "Provisional", and "Total Votes" 
