@@ -136,8 +136,10 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 ----------------
 
-### readme:   
-- **Description**: in precinct file, whether this election corresponds to elections for President ("president"), Senate ("senate"), US House ("house"), or state ("state") files, or none of these ("local")
+### readme_check:   
+- **Description**: TRUE/FALSE indicator as to whether a there are notes in the readme file relevant to the state. 
+
+--------------------------------------------------------------------------------------------------------------------
 
 ## Notes
 Iowa data added. Stages include "FIRST ROUND", "SECOND ROUND" and "SDE AWARDED." 
