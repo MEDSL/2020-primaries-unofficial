@@ -1,14 +1,6 @@
 # 2020-primaries-unofficial
 Repository for the 2020 unofficial primary results. The data are broken into county and precinct returns, each within their own folders. Additionally, the counties folder will report election maps by level of competition as measured by number of effective candidates. The results will be reported both by standard jurisdiction (counties; towns) and by Gastner-Newman cartograms for data visualization purposes. For QA purposes, please contact John A Curiel at jcuriel@mit.edu, and he will respond as soon as possible. 
 
-# Codebook for 2018 Election Offical Data
-
-The data files for unofficial county and precinct level elections returns for the 2020 primaries. The files are incomplete and will be updated until completion. Files that begin with "county" refer to county level results, and those with "precinct" precinct level results. 
-
-The source of the data is typically each state's Secretary of State website or comparable elections division page on an official state website. (The precinct-level returns for California are obtained from the statewide redistricting database, https://statewidedatabase.org/). For Minnesota, Missouri, New Jersey, Oregon, South Carolina, Texas, and Vermont, we used precinct-level returns from the OpenElections project (https://github.com/openelections).
-
-Returns for some states are separated by mode of voting (e.g. election day, absentee, etc.), as indicated by the `mode` variable in the dataset. For Maine in the `county_2018` file, data was drawn from precinct results, some of which could not be linked to corresponding counties. These are listed as missing values in the county variable. The county-level data in the `county_2018` file for Maine is thus incomplete.
-
 ## Variables
 The variables are listed as they appear in the data file. Not all variables appear in each data file.
 
