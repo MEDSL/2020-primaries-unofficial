@@ -42,18 +42,33 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 -----------------
 
-### county
+### county_name
  - **Description**: county name
+ 
+ -----------------
+
+### county_fips
+ - **Description**: county fips code
+ 
+ -----------------
+
+### jurisdiction_name
+ - **Description**: name of the jurisdiction, county/town name, (except in Alaska, where results are reported by state legislative district). Towns for New England states (i.e. NH, MA, VT, CT, etc.)
+ 
+-----------------
+
+### jurisdiction_fips
+ - **Description**: fips code of the jurisdiction, county/town name, (except in Alaska, where results are reported by state legislative district). Towns for New England states (i.e. NH, MA, VT, CT, etc.)
 
 -----------------
 
 ### office
-- **Description**: office name ; president
+- **Description**: office name ; i.e. president
 
 -----------------
 
-### jurisdiction
- - **Description**: in precinct file, county name (except in Alaska, where results are reported by state legislative district)
+### district
+ - **Description**: district identifier for the office; if state legislative or US House, string padded to be length of three on left side. Coded as "statewide" for statewide offices, and left as "" for offices without consistent district information.
 
 -----------------
 
@@ -67,13 +82,23 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 -----------------
 
+### special
+- **Description**: TRUE/FALSE indicator for whether the election was a special election
+
+-----------------
+
 ### candidate
 - **Description**: name of the candidate; write-in candidates/totals represented as NA's
  
 -----------------
 
-### party
-- **Description**: party of the candidate (always entirely lowercase); write-in candidates/totals represented as NA's
+### party_detailed
+- **Description**: party of the candidate (always entirely lowercase); write-in candidates/totals represented as ""
+
+-----------------
+
+### party_simplified
+- **Description**: simplified party of the candidate, taking form of "democrat," "republican," "libertarian," "other," and "nonpartisan"
 
 -----------------
 
@@ -107,6 +132,11 @@ The variables are listed as they appear in the data file. Not all variables appe
 ----------------
 
 ### dataverse  
+- **Description**: in precinct file, whether this election corresponds to elections for President ("president"), Senate ("senate"), US House ("house"), or state ("state") files, or none of these ("local")
+
+----------------
+
+### readme:   
 - **Description**: in precinct file, whether this election corresponds to elections for President ("president"), Senate ("senate"), US House ("house"), or state ("state") files, or none of these ("local")
 
 ## Notes
