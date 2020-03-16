@@ -1,14 +1,6 @@
 # 2020-primaries-unofficial
 Repository for the 2020 unofficial primary results. The data are broken into county and precinct returns, each within their own folders. Additionally, the counties folder will report election maps by level of competition as measured by number of effective candidates. The results will be reported both by standard jurisdiction (counties; towns) and by Gastner-Newman cartograms for data visualization purposes. For QA purposes, please contact John A Curiel at jcuriel@mit.edu, and he will respond as soon as possible. 
 
-# Codebook for 2018 Election Offical Data
-
-The data files for unofficial county and precinct level elections returns for the 2020 primaries. The files are incomplete and will be updated until completion. Files that begin with "county" refer to county level results, and those with "precinct" precinct level results. 
-
-The source of the data is typically each state's Secretary of State website or comparable elections division page on an official state website. (The precinct-level returns for California are obtained from the statewide redistricting database, https://statewidedatabase.org/). For Minnesota, Missouri, New Jersey, Oregon, South Carolina, Texas, and Vermont, we used precinct-level returns from the OpenElections project (https://github.com/openelections).
-
-Returns for some states are separated by mode of voting (e.g. election day, absentee, etc.), as indicated by the `mode` variable in the dataset. For Maine in the `county_2018` file, data was drawn from precinct results, some of which could not be linked to corresponding counties. These are listed as missing values in the county variable. The county-level data in the `county_2018` file for Maine is thus incomplete.
-
 ## Variables
 The variables are listed as they appear in the data file. Not all variables appear in each data file.
 
@@ -42,18 +34,33 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 -----------------
 
-### county
+### county_name
  - **Description**: county name
+ 
+ -----------------
+
+### county_fips
+ - **Description**: county fips code
+ 
+ -----------------
+
+### jurisdiction_name
+ - **Description**: name of the jurisdiction, county/town name, (except in Alaska, where results are reported by state legislative district). Towns for New England states (i.e. NH, MA, VT, CT, etc.)
+ 
+-----------------
+
+### jurisdiction_fips
+ - **Description**: fips code of the jurisdiction, county/town name, (except in Alaska, where results are reported by state legislative district). Towns for New England states (i.e. NH, MA, VT, CT, etc.)
 
 -----------------
 
 ### office
-- **Description**: office name ; president
+- **Description**: office name ; i.e. president
 
 -----------------
 
-### jurisdiction
- - **Description**: in precinct file, county name (except in Alaska, where results are reported by state legislative district)
+### district
+ - **Description**: district identifier for the office; if state legislative or US House, string padded to be length of three on left side. Coded as "statewide" for statewide offices, and left as "" for offices without consistent district information.
 
 -----------------
 
@@ -67,13 +74,23 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 -----------------
 
+### special
+- **Description**: TRUE/FALSE indicator for whether the election was a special election
+
+-----------------
+
 ### candidate
 - **Description**: name of the candidate; write-in candidates/totals represented as NA's
  
 -----------------
 
-### party
-- **Description**: party of the candidate (always entirely lowercase); write-in candidates/totals represented as NA's
+### party_detailed
+- **Description**: party of the candidate (always entirely lowercase); write-in candidates/totals represented as ""
+
+-----------------
+
+### party_simplified
+- **Description**: simplified party of the candidate, taking form of "democrat," "republican," "libertarian," "other," and "nonpartisan"
 
 -----------------
 
@@ -108,6 +125,13 @@ The variables are listed as they appear in the data file. Not all variables appe
 
 ### dataverse  
 - **Description**: in precinct file, whether this election corresponds to elections for President ("president"), Senate ("senate"), US House ("house"), or state ("state") files, or none of these ("local")
+
+----------------
+
+### readme_check:   
+- **Description**: TRUE/FALSE indicator as to whether a there are notes in the readme file relevant to the state. 
+
+--------------------------------------------------------------------------------------------------------------------
 
 ## Notes
 Iowa data added. Stages include "FIRST ROUND", "SECOND ROUND" and "SDE AWARDED." 
